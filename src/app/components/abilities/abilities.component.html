@@ -1,0 +1,20 @@
+<section class="container abilities py-5">
+	<h2 class="fw-bold text-white font-slab text-center">What can I do <span>?</span></h2>
+	<div class="underline"></div>
+	<div class="abilities-container py-5 px-2">
+		<div class="row gap-4 gap-md-0">
+				<div class="col-sm-4 px-lg-4 mt-4 main-box" *ngFor="let ability of abilities" data-aos="fade-up"
+				data-aos-duration="2000">
+					<div class="box p-5 px-md-3 px-lg-5 h-100">
+						<div class="box-title text-center">
+							<img src={{ability.img}} alt="">
+							<p class="m-0 font-codesa subtitle pt-4">{{ability.title}}</p>
+						</div>
+						<p class="m-0 text-white font-codesa pt-3">{{ability.description}}</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+

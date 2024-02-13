@@ -1,0 +1,91 @@
+<section class="container form pt-5 z-n1" id="contact">
+  <div class="row">
+    <div class="col-sm-6 col-md-12 col-xl-6 py-5" data-aos="fade-right" data-aos-duration="2500">
+      <div class="cta-header">
+        <h2 class="text-white fw-bold font-slab">Looking for someone that solve problems,communicate and work with your team <span class="question-mark">?</span></h2>
+        <p class="text-white mt-4 font-codesa lh-md pe-4">If your answer is yes, please feel free to send me an email or use the following links to contact me, and I will be more than happy to talk to you and start working together 😁.</p>
+      </div>
+      <div class="social-media pt-4">
+        <ul class="list-unstyled p-0 d-flex flex-column gap-3 w-50">
+          <li>
+            <a href="https://www.linkedin.com/in/carloslopez1993/" target="_blank" class="text-decoration-none text-white fw-semibold d-flex gap-3 align-items-center">
+              <i class="bi bi-linkedin fs-4"></i>
+              Linkedin/carloslopez1993
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100095584118334" target="_blank" class="text-decoration-none text-white fw-semibold d-flex gap-3 align-items-center">
+              <i class="bi bi-messenger fs-4"></i>
+              Facebook/carlosdev
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/CarlosDev24" target="_blank" class="text-decoration-none text-white fw-semibold d-flex gap-3 align-items-center">
+              <i class="bi bi-telegram fs-4"></i>
+              Telegram/carlosdev
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="img-box text-md-center">
+        <img src="../../../assets/contact.png" alt="" class="img-fluid" width="400">
+      </div>
+    </div>
+    <!--- *************************** Contact Form ****************** -->
+    <div class="col-sm-6 col-md-12 col-xl-6">
+      <form [formGroup]="form" class="py-5 position-relative z-0" (ngSubmit)="sendEmail()">
+        <h2 class="font-slab fw-bold text-center form-top">
+          Get in Touch!
+        </h2>
+        <div class="row my-5">
+          <div class="form-input col-sm-6">
+            <p class="text-white fs-5 font-codesa fw-bold">Full Name <span>*</span></p>
+            <input type="text" class="form-control font-codesa py-3 rounded-5 px-4" formControlName="fullName">
+            <small class="text-danger ps-3 font-codesa" *ngIf="form.get('fullName')?.invalid && (form.get('fullName')?.dirty || form.get('fullName')?.touched)">This fiel is required</small>
+          </div>
+          <div class="form-input col-sm-6 mt-4 mt-md-0">
+            <p class="text-white fs-5 font-codesa fw-bold">Email Address <span>*</span></p>
+            <input type="email" class="form-control font-codesa py-3 rounded-5 px-4" formControlName="email">
+            <small class="text-danger ps-3 font-codesa" *ngIf="form.get('email')?.invalid && (form.get('email')?.dirty || form.get('email')?.touched)">This fiel is required</small>
+          </div>
+          <div class="form-input col-sm-12 mt-4">
+            <p class="text-white fs-5 font-codesa fw-bold">Subject <span>*</span></p>
+            <input type="text" class="form-control font-codesa py-3 rounded-5 px-4" formControlName="subject">
+            <small class="text-danger ps-3 font-codesa" *ngIf="form.get('subject')?.invalid && (form.get('subject')?.dirty || form.get('subject')?.touched)">This fiel is required</small>
+          </div>
+        </div>
+        <div class="form-input col-sm-12">
+          <p class="text-white fs-5 font-codesa fw-bold">Message <span>*</span></p>
+          <textarea 
+          formControlName="message"
+          class="form-control font-codesa" id="exampleFormControlTextarea1" rows="8" style="resize: none;"></textarea>
+          <small class="text-danger ps-3 font-codesa" *ngIf="form.get('message')?.invalid && (form.get('message')?.dirty || form.get('message')?.touched)">This fiel is required</small>
+        </div>
+       <div class="col-sm-12 py-5 text-center form-btn">
+        <button type="submit" class="fw-bold w-50 py-3 rounded-5 orange-button font-codesa">SEND MESSAGE</button>
+       </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="container">
+  <div class="container border-top border-1 py-2 d-flex justify-content-between flex-wrap">
+    <p class="m-0 text-secondary text-center text-md-start">© Copyright 2024 | CarlosDev | All Rights Reserved</p>
+    <div class="social-media d-flex gap-3 mx-auto mx-md-0">
+      <a href="https://www.linkedin.com/in/carloslopez1993/" class="text-decoration-none" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100095584118334" class="text-decoration-none" target="_blank">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/carlos_dev2023/" class="text-decoration-none" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://twitter.com/CarlosL82534565" class="text-decoration-none" target="_blank">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+    </div>
+  </div>
+	
+</footer>

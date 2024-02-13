@@ -1,0 +1,55 @@
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../../assets/hero.png');
+  background-repeat: no-repeat;
+  background-position: 0px;
+}
+
+.hero-title, .hero-context span {
+  font-family: var(--slab);
+}
+
+.hero-title-solve {
+	color: var(--primary);
+}
+
+
+.orange-button {
+  background-color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.orange-button:hover {
+  background-color: rgb(216, 144, 35);
+}
+
+.btn-project {
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.btn-project:hover {
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-in-out;
+  color: var(--primary);
+}
+
+
+@media (min-width: 767px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-context span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1439px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero {
+    height: 750px;
+  }
+}

@@ -1,0 +1,45 @@
+
+.form {
+  z-index: -1;
+}
+
+.form-top, .form-input span {
+  color: var(--primary);
+}
+
+.form-input input, .form-input textarea {
+  background-color: #262424;
+  border: 1px solid #8c898986;
+  color: white;
+}
+
+.form-input input:focus, .form-input textarea {
+  box-shadow: 0px 0px 1px 0px var(--primary);
+}
+
+
+.form-btn button {
+background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-btn button:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: white;
+}
+
+.question-mark {
+  color: var(--primary);
+}
+
+.social-media i {
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.social-media a:hover i {
+  color: var(--primary);
+}

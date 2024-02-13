@@ -1,0 +1,70 @@
+<header class="container-fluid position-sticky top-0 z-1 navbar-header">
+  <nav class="navbar navbar-expand-lg py-3 d-none d-md-flex container">
+      <div class="container-fluid d-flex align-items-center pt-1">
+          <a class="navbar-brand fw-bold d-flex align-items-center gap-1 fs-3 text-white" href="#">
+              <span class="text-white">{{'{'}}</span>
+              <span class="logo px-2">Carlos</span>
+              <span class="text-white">{{'}'}}</span>
+          </a>
+          <div class="d-flex justify-content-evenly align-items-center">
+              <ul class="d-flex m-0 p-0 list-unstyled">
+                  <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link fw-semibold" href="#skill">SKILLS</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link fw-semibold" href="#portfolio">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item " >
+                      <a class="nav-link  fw-semibold" href="#contact">CONTACT</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+
+<!----  RESPONSIVE HEADER -->
+<nav class="mobilebar_container d-md-none position-sticky top-0 navbar-header">
+  <div class="container-fluid p-0">
+      <div class="mobile_navbar d-flex justify-content-between p-2">
+          <a class="navbar-brand fw-bold d-flex align-items-center gap-1 fs-3 text-white logo-icon" href="#">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-1 fs-3 text-white" href="#">
+              <span class="text-white">{{'{'}}</span>
+              <span class="logo px-2">Carlos</span>
+              <span class="text-white">{{'}'}}</span>
+          </a>
+          </a>
+          <i class="bi bi-list text-white menu-icon" (click)="toggleMenu()"></i>
+      </div>
+      <div class="side-bar pt-3" [ngClass]="toggleValue ? 'showMenu' : ''" >
+          <a class="navbar-brand fw-bold d-flex align-items-center gap-1 fs-3 text-white logo-icon ps-2" href="#">
+            <span class="text-white">{{'{'}}</span>
+            <span class="logo px-2">Carlos</span>
+            <span class="text-white">{{'}'}}</span>
+          </a>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 px-2 pt-3 z-1">
+              <li class="nav-item border-bottom border-1">
+                  <a class="nav-link fw-semibold" href="#" (click)="toggleMenu()">HOME</a>
+              </li>
+              <li class="nav-item border-bottom border-1">
+                  <a class="nav-link fw-semibold" href="#about" (click)="toggleMenu()">ABOUT</a>
+              </li>
+              <li class="nav-item border-bottom border-1">
+                  <a class="nav-link fw-semibold" href="#skill" (click)="toggleMenu()">SKILLS</a>
+              </li>
+              <li class="nav-item border-bottom border-1">
+                  <a class="nav-link fw-semibold" href="#portfolio" (click)="toggleMenu()">PORTFOLIO</a>
+              </li>
+              <li class="nav-item border-bottom border-1">
+                  <a class="nav-link  fw-semibold" href="#contact" (click)="toggleMenu()">CONTACT</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>

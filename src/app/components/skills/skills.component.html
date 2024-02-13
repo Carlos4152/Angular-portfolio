@@ -1,0 +1,28 @@
+<section class="container-fluid skills py-5" id="skill">
+  <div class="container py-lg-5 py-5">
+
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-md-12 col-xl-6">
+        <div class="skill-context">
+          <div class="skill-title d-flex align-items-center">
+            <span class="pe-2 h2 fw-bold">{{'{'}}</span>
+            <h2 class="font-slab fw-bold text-white">Let’s Explore My Skills</h2>
+            <span class="ps-2 h2 fw-bold">{{'}'}}</span>
+          </div>
+          <p class="text-white font-codesa mt-4 lh-lg pe-5">
+            These are all the technologies I've learned and feel comfortable with. I learned them by watching videos on YouTube, reading their documentation, and building small projects to understand the basics. Learning on my own, I've realized that I'm preparing to solve problems and keep learning new front-end skills as they come along, and I'm ready for it!
+          </p>
+        </div>
+      </div>
+      <!--- ************************* Skills Icon ********************************************-->
+      <div class="col-sm-6 col-md-12 col-xl-6 row m-0 p-0 order-1" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 col-xl-3 text-center mt-3" *ngFor="let skill of skills">
+          <div class="icon-container rounded-2 d-flex align-items-center justify-content-center flex-column ">
+            <img src={{skill.img}} alt={{skill.title}}>
+            <p class="text-white pt-3 font-codesa fw-semibold">{{skill.title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

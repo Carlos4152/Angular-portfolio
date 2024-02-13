@@ -1,0 +1,26 @@
+
+
+.skill-context span{
+  color: var(--primary);
+}
+
+.icon-container {
+  border: 2px solid var(--primary);
+  background-color: #272626;
+  cursor: pointer;
+  height: 135px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+  background-color: var(--primary);
+}
+
+.skill-img img{
+  width: 270px;
+}
+
+.bi-caret-right-fill {
+  animation: right 0.5s ease-in-out 0.3s infinite alternate-reverse;
+  position: relative;
+}
