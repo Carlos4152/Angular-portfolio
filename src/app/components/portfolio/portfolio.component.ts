@@ -50,9 +50,9 @@ export class PortfolioComponent {
         "./../../assets/skills-icon/express.png", 
         "./../../assets/skills-icon/mongo.png"
       ],
-      liveView: "https://jhunter.netlify.app/",
-      githubLink: "https://github.com/Carlos4152/jobhunter",
-      video: 'https://www.facebook.com/100095584118334/videos/1056463592305250',
+      liveView: "https://jbhunter.netlify.app/login",
+      githubLink: "https://github.com/Carlos4152/mean-stack-jobhunter",
+      video: 'https://www.youtube.com/watch?v=8VDJ5U_fuRo&ab_channel=Charly_Dev',
       demo: [{
         title:'DEMO ACCOUNT',
         email: 'toyo@gmail.com', 
