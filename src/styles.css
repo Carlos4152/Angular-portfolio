@@ -23,7 +23,7 @@ body,
 
 body {
 	background-color: #0A0909 !important;
-
+	overflow-x: hidden;
 }
 
 .font-codesa {

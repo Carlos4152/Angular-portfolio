@@ -2,6 +2,7 @@
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../../assets/hero.png');
   background-repeat: no-repeat;
   background-position: 0px;
+  background-size: cover;
 }
 
 .hero-title, .hero-context span {

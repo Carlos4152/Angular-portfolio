@@ -13,7 +13,7 @@ export class PortfolioComponent {
       id: 1,
       img: "../../../assets/projects/newbie.png",
       title: "NEWBIE JOB FINDER",
-      description: " Newbie Job Finder is a website that helps people find entry-level jobs or assists them in transitioning to a new career. I created the logo and design for this project, and I decided to build a website and a sample dashboard to improve my backend skills and continue practicing my Angular skills.",
+      description: "Company aiding entry-level candidates or those exploring career shifts. Users register and utilize the platform's dashboard to view recent entry-level positions. This feature enables job applications, profile creation, image uploads, direct messaging to tech support, application removal, job title searches, and offers diverse candidate services.",
       skills: [
         "./../../assets/skills-icon/html.png", 
         "./../../assets/skills-icon/css.png", 
@@ -37,9 +37,8 @@ export class PortfolioComponent {
       id: 2,
       img: "./../../assets/projects/jobhunterone.png",
       title: "JOB HUNTER",
-      description: `Job Hunter is a simple platform that helps users track their job application with its details,
-      provides tips on preparing for interviews, and builds resumes and cover letters. This project was built to learn and practice Angular 16, and I used some backend technologies to
-      understand the basics and gain some knowledge.`,
+      description: ` It's a platform that allows users to keep track of their job applications. Users can register and sign in, and start adding, updating, and deleting their job applications. It also provides some free resources to be used as guidance on how to build a resume, cover letter, and how to get ready for interviews.
+      `,
       skills: [
         "./../../assets/skills-icon/html.png", 
         "./../../assets/skills-icon/css.png", 
