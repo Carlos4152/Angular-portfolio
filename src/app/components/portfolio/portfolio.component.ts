@@ -26,7 +26,7 @@ export class PortfolioComponent {
       ],
       liveView: "https://newbiejobfinder.netlify.app/home",
       githubLink: "https://github.com/Carlos4152/mean_stack_newbie-job-finder",
-      video: 'https://www.youtube.com/watch?v=t73nSkPAeNY&t=149s&ab_channel=Charly_Dev',
+      video: 'https://www.youtube.com/watch?v=WhqdY-e_71k&t=19s&ab_channel=Charly_Dev',
       demo: [{
         title:'DEMO ACCOUNT',
         email: 'carlos@gmail.com', 
